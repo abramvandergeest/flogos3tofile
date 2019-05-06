@@ -12,7 +12,7 @@ type Settings struct {
 
 type Input struct {
 	Bucket       string `md:"bucket,required"`
-	Key string         `md:"key.required"`
+	Key string         `md:"key,required"`
 }
 
 func (r *Input) FromMap(values map[string]interface{}) error {
