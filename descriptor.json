@@ -1,0 +1,33 @@
+{
+  "name": "flogos3tofile",
+  "type": "flogo:activity",
+  "version": "0.0.1",
+  "title": "flogos3tofile",
+  "description": "flogos3tofile",
+  "homepage": "https://github.com/abramvandergeest/flogos3tofile",
+  "settings": [
+    {
+      "name": "resamplingFilter",
+      "type": "string",
+      "required": false
+    }
+  ],
+  "input":[
+    {
+      "name": "bucket",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "output": [
+    {
+      "name": "file",
+      "type": "object"
+    }
+  ]
+}
