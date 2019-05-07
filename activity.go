@@ -89,6 +89,8 @@ func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
         ctx.Logger().Errorf("Unable to load file %q, %v", input.Key, err)
     }
 
+	ctx.Logger().Infof("file opened for output %q", file.Name())
+
 	output := &Output{File: outFile}
 	err = ctx.SetOutputObject(output)
 	if err != nil {
